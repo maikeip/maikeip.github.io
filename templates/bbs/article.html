@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>文章详情页</title>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/bbs/articles.css">
+</head>
+<body>
+
+{% include 'bbs/includs/header.html' %}
+
+<!--中间内容部分-->
+<main>
+    <div class="container mt-2">
+        <!--新闻列表-->
+        <div class="row">
+            <div class="col-12 col-md-9 px-0">
+                <div class="article-content d-flex">
+                    <div class="article-body">
+                        <h3>开源 – “这是最好的时代，这是最坏的时代”</h3>
+                        <div class="detail_about">
+                            <span class="time_source ">2018-01-16 14:38 来源: 商务部</span>
+                            <span class="comment_liens">3</span>
+                        </div>
+
+                        <p class="summary">
+                            开源给程序员提供了一个展现自己个人能力的绝好机会，特别是对于大厂、大系统的开发者。这个展现，能让大家更加客观地评价一个程序员的价值。
+                        </p>
+
+                        <p>
+                            今天一早，我给一位远在西安还从未谋面的程序员小邓发出了一份很不错的offer。一周前，他观看腾讯开发者大会的直播视频，听了我的演讲之后，加了我的微信，并主动告诉我，很想加入涛思数据。虽然他毕业的学校还有工作的经历，不是那么靓丽，但我一下看到了他简历里列的GitHub地址以及参与的开源项目，因此马上进GitHub浏览他的程序，发现程序挺漂亮，结构、层次都很清晰，代码可读性很强，更让我惊讶的是，用英文写的文档以及注释完全不输给我这个在美国留学工作10多年的海归。我立即让另外一个同事也去看一下他的代码，得出的结论是，这人很优秀，即使远程工作，也值得马上录用。因此我们马上视频交流，很快，我就定下了录用的决定。
+                        </p>
+                        <p>
+                            如果没有GitHub，没法翻看他写的上万行代码以及文档，没法查看修改记录，我绝不会考虑录用一个连面都没有见过的小伙子，而且招聘时，还是会更倾向于我中国科大的师弟师妹，或有过其他名校就读和大厂工作经历的人。<strong>开源，改变了我的面试流程，改变了涛思数据，也改变了一个程序员的人生轨迹。</strong>
+                        </p>
+                        <p>现在的软件系统往往很大，以大家熟悉的Linux内核为例，源代码行数已经超过2500万行，文件超过6万个，参与的开发者超过2万人。就连涛思数据开源的TDengine,
+                            一个看似简单的物联网大数据处理平台软件，C/C++代码已经超过30万行，Python测试代码都已超过15万行，而且还会成倍增长。开发一款软件，更多的是团队协同，而不是单兵作战。单个程序员的贡献如何体现？如何让外界的人知道并评估？对于闭源软件来说，这个价值判断问题无从下手。但开源不同，因为程序员写的任何一行代码，注释，做的任何修改都会被记录下来，而且任何人都可以看到。能力的高低，贡献的大小随时可查。</p>
+                        <p>
+                            <img alt=""
+                                 src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9zTkVDYVZqNUtYUHJFeXliV0pLOUNrQXRiOVRVTUtpYXJ2RWljQWljajNvbzNOVnJ2Sm1GWTR6MnZQbk1wblR0ZWFZVzJxalNEVEFsSjZnVDdPb1Jnd1hiQS82NDA?x-oss-process=image/format,png">TDengine
+                            在 GitHub 上的页面</p>
+                        <p>
+                            开源给程序员提供了一个展现自己个人能力的绝好机会，特别是对于大厂、大系统的开发者。这个展现，能让大家更加客观地评价一个程序员的价值。长期以来，大家更容易相信在大厂工作过的，虽然他有可能从没贡献过核心代码，从没解决过重大技术问题，只是一个滥竽充数之辈；大家更倾向于相信名校毕业的，即使他早已停止学习，只是曾经高考分数不错；大家更容易相信35岁以下的人，不相信大龄程序员依然有很强的战斗力。开源的代码，能让大家抛弃对教育、年龄、性别、经验、肤色、地域、文化的偏见，看到一个程序员背后真正的价值，便于组建团队，便于协同作战。</p>
+                        <p>
+                            开源让程序员的代码成为了作品，与画家的画、音乐家的曲子一样，可以被全球程序员欣赏、使用，并传承。对于闭源的软件而言，这是不可能的，大家看到的只是UI或API，无法让人看到程序本身，更无从欣赏。你在微软为Windows
+                            操作系统开发的核心模块，无论设计得多么优雅，你在腾讯为微信后台设计的消息处理模块，无论高并发能力有多么强悍，都无法让人欣赏、惊叹。但开源之后，一切都变了。只要你的代码足够好，解决了重大问题，那一定会成为传世之作。即使有瑕疵，后来者也可以在你的基础上修改，但你的名字永远会镌刻在代码上，而不会被历史冲刷掉。</p>
+                        <p>
+                            有了作品这个感觉之后，程序员会天然的对自己的代码产生一种自豪感，会对代码的质量产生极致的追求，因为他不想自己的代码被人唾弃，而是被欣赏。在2019年7月决定将TDengine开源之前，涛思数据团队花了好几个月的时间整理代码，编写文档，目的就是不想让它过于难看，被人诟病。不开源的话，我们根本没有这个动力去做，因为用户是看不见的。在2019年底启动TDengine
+                            2.0的开发，更是如此，就是想让TDengine的设计与代码更加优雅，结构更加清晰，让其他程序员看的时候，能享受到一种快乐和美感。3个月前，我花了几天时间动手为TDengine写了一个小模块tref.c，就想完美地解决在多线程情况下，资源的生命周期管理问题，而且就希望这个500来行的小程序能被全球的程序员学习、使用和改进，不再为多线程问题所烦。如果不是因为开源，没有会成为作品的感觉，我大半就是仅仅解决一个具体问题而已。</p>
+                        <p style="text-align:center;">
+                            <img alt=""
+                                 src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9zTkVDYVZqNUtYUHJFeXliV0pLOUNrQXRiOVRVTUtpYXJuOXU4WnZMa29IWXdYZ01zYW9Ic1RpYXp2UEdsYk9JUzRTa2dZR2Y5Rmx2dzROdFQwZlUydjRBLzY0MA?x-oss-process=image/format,png">
+                        </p>
+                        <p>GitHub&nbsp;上 tref.c 的一段源代码</p>
+                        <p>
+                            对于初入茅庐的程序员而言，参与开源项目，更是一种学习的机会。不仅可以观摩、学习绝顶高手的代码，更可以参与其中，贡献一段代码。自己写的代码有问题，一定会被测试出来、被人指出毛病，甚至直接被人修改或抛弃。与大侠直接过招，相比闭门造车，相比自己摸索，成长的速度要快N倍。而且参与的方式有很多种，除直接贡献产品代码外，还可以贡献测试例、测试代码，贡献文档，贡献使用案例等。就象TDengine，测试代码的行数将会远超过产品本身的代码行数，而且对技术的要求一点都不亚于产品本身。我的第一行程序是1984年写下的，当时正读高中一年级，只能看到谭浩强编写的《BASIC语言程序》这本书，书里尽是一些简单得不能再简单的程序。如果当时就能像现在这样访问无数优秀的开源代码，对于一个如饥似渴的学生而言，那无疑找到了世界上最好的课本和老师。</p>
+                        <p>
+                            对于90后00后程序员而言，开源，让他们赶上了程序员前所未有的黄金时代。对于我这个52岁的大龄程序员而言，仍然是赶上了黄金时代，因为可以依靠自己的实力证明，编程没有年龄的限制，而且仍大有用武之地。真心的希望，三十年之后，还有人在看在用我写的代码，而且我自己还能给TDengine贡献代码，那才是我最大的幸福。</p>
+                        <p style="text-align:center;">
+                            <img alt=""
+                                 src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X2pwZy9zTkVDYVZqNUtYUHJFeXliV0pLOUNrQXRiOVRVTUtpYXJ1elU1bXh4T3JsTFM2c0hqRjJQaWNsUFI5SElINHlZbURPc3NUend1bEtRMVl0MGFUNUVqNGpBLzY0MA?x-oss-process=image/format,png">
+                        </p>
+                        <p>这台Mac为TDengine贡献了4万多行代码</p>
+                        <p><strong>“这是最好的时代”</strong>，开源，让程序员的价值能更客观地展现，让程序员有了属于自己的作品，让程序员去追求极致，有动力去打磨作品，让其成为传世之作。对于真正的程序员而言，毫无疑问，这是最好的时代。
+                        </p>
+                        <p><strong>“这是最坏的时代”</strong>，开源，让滥竽充数的程序员无所遁形，能传承下去的一定是精美的作品，不再会有劣币驱逐良币之说。对于靠拍、靠混，依赖炫酷的PPT和报告升迁的程序员而言，毋庸置疑，这是最坏的时代。
+                        </p>
+                        <p>无论年龄，无论学历，无论是在BAT还是在startup工作,&nbsp;
+                            只要你热爱编程，就一定要参与到开源的浪潮中。无论你是全职加入涛思数据这样的开源软件公司，还是作为社区贡献者参与一个开源项目，只要持续努力，你一定会给世界留下一个印迹，给人类留下一幅作品。</p>
+                        <p>陶建辉</p>
+                        <p>2020年12月27日于北京望京</p>
+
+
+                        <!--收藏/取消收藏-->
+                        <a href="javascript:;" class="collection block-center" style="display: none">收藏</a>
+                        <a href="javascript:;" class="collected block-center" style="display: block">
+                            <span class="out" style="display: block">已收藏</span>
+                            <span class="over" style="display: none">取消收藏</span>
+                        </a>
+
+                        <!--评论栏-->
+                        <!--评论栏-未登陆显示登陆之后进行评论-->
+                        <div class="comment_form_logout">
+                            登录发表你的评论
+                        </div>
+
+                        <!--评论栏-登陆之后显示用户头像并进行评论-->
+                        <form action="" class="comment_form">
+                            <div class="person_pic">
+                                <img src="/static/images/worm.jpg" alt="用户图标">
+                                <textarea placeholder="请发表您的评论" class="comment_input"></textarea>
+                            </div>
+                            <input type="submit" name="" value="评 论" class="comment_sub">
+                        </form>
+
+                        <!--评论数据展示栏-->
+                        <div class="comment_count">
+                            4条评论
+                        </div>
+
+                        <div class="comments">
+                            <div class="comment">
+                                <div class="person_pic">
+                                    <img src="/static/images/worm.jpg" alt="用户图标">
+                                </div>
+                                <div class="comment-content">
+                                    <div class="user_name">用户张山</div>
+                                    <div class="comment_text">
+                                        写的不错，学习了，学习的道路上一起进步，也期待你的关注与支持！
+                                    </div>
+                                    <div class="comment-details">
+                                        <div class="comment_time ">2020-01-01 00:00:00</div>
+                                        <div>
+                                            <a href="javascript:;" class="comment_reply">回复</a>
+                                            <a href="javascript:;" class="comment_up">赞</a>
+                                        </div>
+                                    </div>
+                                    <form class="reply_form">
+                                        <div>
+                                            <textarea class="reply_input"></textarea>
+                                            <div class="sub_submit">
+                                                <input type="submit" name="" value="回复" class="reply_sub">
+                                                <input type="reset" name="" value="取消" class="reply_cancel">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="comment">
+                                <div class="person_pic ">
+                                    <img src="/static/images/worm.jpg" alt="用户图标">
+                                </div>
+                                <div class="comment-content">
+                                    <div class="user_name ">用户张山</div>
+                                    <div class="comment_text ">
+                                        写的不错，学习了，学习的道路上一起进步，也期待你的关注与支持！
+                                    </div>
+                                    <div class="reply_text_con ">
+                                        <div class="user_name2">用户李思</div>
+                                        <div class="reply_text">
+                                            个人认为，这篇文章同样代表了开源的另一个现实——令人悲哀。推广请好好推，别把应聘和推广以及开源相提并论，这样只会拉低你们开源的价值。
+                                        </div>
+                                    </div>
+                                    <div class="comment-details">
+                                        <div class="comment_time ">2020-01-01 00:00:00</div>
+                                        <div>
+                                            <a href="javascript:;" class="comment_reply">回复</a>
+                                            <a href="javascript:;" class="comment_up has_comment_up">1</a>
+                                        </div>
+                                    </div>
+                                    <form class="reply_form">
+                                        <div>
+                                            <textarea class="reply_input"></textarea>
+                                            <div class="sub_submit">
+                                                <input type="submit" name="" value="回复" class="reply_sub">
+                                                <input type="reset" name="" value="取消" class="reply_cancel">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="comment">
+                                <div class="person_pic">
+                                    <img src="/static/images/worm.jpg" alt="用户图标">
+                                </div>
+                                <div class="comment-content">
+                                    <div class="user_name">用户张山</div>
+                                    <div class="comment_text">
+                                        写的不错，学习了，学习的道路上一起进步，也期待你的关注与支持！
+                                    </div>
+                                    <div class="comment-details">
+                                        <div class="comment_time ">2020-01-01 00:00:00</div>
+                                        <div>
+                                            <a href="javascript:;" class="comment_reply">回复</a>
+                                            <a href="javascript:;" class="comment_up">赞</a>
+                                        </div>
+                                    </div>
+                                    <form class="reply_form">
+                                        <div>
+                                            <textarea class="reply_input"></textarea>
+                                            <div class="sub_submit">
+                                                <input type="submit" name="" value="回复" class="reply_sub">
+                                                <input type="reset" name="" value="取消" class="reply_cancel">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="comment">
+                                <div class="person_pic">
+                                    <img src="/static/images/worm.jpg" alt="用户图标">
+                                </div>
+                                <div class="comment-content">
+                                    <div class="user_name">用户张山</div>
+                                    <div class="comment_text">
+                                        写的不错，学习了，学习的道路上一起进步，也期待你的关注与支持！
+                                    </div>
+                                    <div class="comment-details">
+                                        <div class="comment_time ">2020-01-01 00:00:00</div>
+                                        <div>
+                                            <a href="javascript:;" class="comment_reply">回复</a>
+                                            <a href="javascript:;" class="comment_up">赞</a>
+                                        </div>
+                                    </div>
+                                    <form class="reply_form">
+                                        <div>
+                                            <textarea class="reply_input"></textarea>
+                                            <div class="sub_submit">
+                                                <input type="submit" name="" value="回复" class="reply_sub">
+                                                <input type="reset" name="" value="取消" class="reply_cancel">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 pr-0 d-none d-md-block ps-2">
+                <div class="card author_card p-2 mb-2">
+                    <div class="card_header">
+                        <a href="/user" target="_blank" class="author_pic">
+                            <img src="https://qingdeng123-1257113111.cos.ap-nanjing.myqcloud.com/user_pic/2022-02/73b879c8-35e2-423a-ab13-92609797103e.jpg"
+                                 alt="author_pic">
+                        </a>
+                        <a href="/user/1" target="_blank" class="author_name">正心</a>
+                    </div>
+                    <div class="text-muted my-2">123123123123</div>
+                    <div class="d-flex flex-row">
+                        <div class="writings d-flex flex-column">
+                            <span class="text-muted">总篇数</span>
+                            <b>1000</b>
+                        </div>
+                        <div class="follows d-flex flex-column ms-5">
+                            <span class="text-muted">粉丝</span>
+                            <b>2</b>
+                        </div>
+                        <div class="ms-5">
+                            <a href="javascript:;" class="focused" data-userid="1" style="display: none  ">
+                                <span class="out">已关</span>
+                                <span class="over d-none">取关</span>
+                            </a>
+                            <a href="javascript:;" class="focus" data-userid="1" style="display: inline-block ">
+                                关注
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card rank">
+                    <div class="card-header rank_title p-0">
+                        <h3>热门文章</h3>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="/article">华尔街见闻早餐FM-Radio|2018年1月11日</a></li>
+                        <li class="list-group-item"><a
+                                href="/article">【兴证策略—投资者行为】12月证券投资类私募管理规模环比上升0.3%（20180116）</a>
+                        </li>
+                        <li class="list-group-item"><a href="/article">剑指全球贸易数字化标准 马士基牵手IBM探索区块链应用</a></li>
+                        <li class="list-group-item"><a href="/article">八大岗位开放，与国内外顶尖经济学家面对面的机会来啦！</a></li>
+                        <li class="list-group-item"><a href="/article">原油突破70之后，下一步将走向何方？</a></li>
+                        <li class="list-group-item"><a href="/article">【黄金晨报】黄金站稳1340创四个月新高 美元连跌四日油价突破70美元</a>
+                        </li>
+                        <li class="list-group-item"><a href="/article">【可转债周报】分化初显择优布局</a></li>
+                        <li class="list-group-item"><a href="/article">万向控股肖风：人工智能和区块链最后会归到一起，通过算法来驱动世界</a></li>
+                        <li class="list-group-item"><a href="/article">杨斌：挫败美国、澳大利亚等国反华势力的嚣张攻势
+                            ——《环球时报》的对策建议值得社会各界关注</a></li>
+                        <li class="list-group-item"><a href="/article">信用强、利率弱，原因几何？</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% include 'bbs/includs/footer.html' %}
+<script src="/static/js/jquery-3.6.0.min.js"></script>
+{#<script src="/static/js/article.js"></script>#}
+</body>
+</html>

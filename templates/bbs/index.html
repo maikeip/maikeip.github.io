@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>首页-大军论坛</title>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+</head>
+<body>
+{% include 'bbs/includs/header.html' %}
+<!--中间内容部分-->
+<main>
+    <div class="container mt-2">
+        <div class="row">
+            <!--新闻列表-->
+            <div class="col-12 col-md-9 px-0">
+                <div class="articles d-flex flex-column">
+                    {% for i in range(5) %}
+                        <div class="card mb-2 article" style="height: 168px">
+                            <div class="row g-0">
+                                <div class="col-md-2">
+                                    <img src="/static/upload/news_pic_code.jpg" class="img-fluid rounded-start"
+                                         alt="...">
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body h-100 d-flex flex-column justify-content-between">
+                                        <a class="card-title" href="/article">装上这 14 个插件后，PyCharm 真的是无敌的存在</a>
+                                        <a class="card-text" href="/article">5. Regex Tester in PyCharm Regex
+                                            Tester是PyCharm的第三方插件,可以测试正则表达式。
+                                            按照下图入口,安装 Regex Tester 插件: 安装完成后,无需重启 PyCharm ,点...</a>
+                                        <p class="card-text small">
+                                            <a href="/author" class="text-muted">陶建辉(Jeff)</a>
+                                            <span class="text-muted">・2020-12-27 18:08:45</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 article" style="height: 168px">
+                            <div class="row g-0">
+                                <div class="col-md-2">
+                                    <img src="/static/upload/news_pic_code2.jpg" class="img-fluid rounded-start"
+                                         alt="...">
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body h-100 d-flex flex-column justify-content-between">
+                                        <a class="card-title" href="/article">开源 – “这是最好的时代，这是最坏的时代”</a>
+                                        <a class="card-text" href="/article">对于真正的程序员而言,毫无疑问,这是最好的时代。
+                                            “这是最坏的时代”,开源,让滥竽充数的程序员无所遁形,能传承下去的一定是精美的作品,不再会有劣币驱逐良...</a>
+                                        <p class="card-text small">
+                                            <a href="/author" class="text-decoration-none text-muted">来源：CSDN</a>
+                                            <span class="text-muted">・2020-12-27 18:08:45</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div id="pagination" style="text-align: center"></div>
+            </div>
+            <div class="col-3 pr-0 hidden-sm hidden-md ps-2">
+                <div class="card rank">
+                    <div class="card-header rank_title p-0">
+                        <h3>热门文章</h3>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="/article">华尔街见闻早餐FM-Radio|2018年1月11日</a></li>
+                        <li class="list-group-item"><a
+                                href="/article">【兴证策略—投资者行为】12月证券投资类私募管理规模环比上升0.3%（20180116）</a>
+                        </li>
+                        <li class="list-group-item"><a href="/article">剑指全球贸易数字化标准 马士基牵手IBM探索区块链应用</a></li>
+                        <li class="list-group-item"><a href="/article">八大岗位开放，与国内外顶尖经济学家面对面的机会来啦！</a></li>
+                        <li class="list-group-item"><a href="/article">原油突破70之后，下一步将走向何方？</a></li>
+                        <li class="list-group-item"><a href="/article">【黄金晨报】黄金站稳1340创四个月新高 美元连跌四日油价突破70美元</a>
+                        </li>
+                        <li class="list-group-item"><a href="/article">【可转债周报】分化初显择优布局</a></li>
+                        <li class="list-group-item"><a href="/article">万向控股肖风：人工智能和区块链最后会归到一起，通过算法来驱动世界</a></li>
+                        <li class="list-group-item"><a href="/article">杨斌：挫败美国、澳大利亚等国反华势力的嚣张攻势
+                            ——《环球时报》的对策建议值得社会各界关注</a></li>
+                        <li class="list-group-item"><a href="/article">信用强、利率弱，原因几何？</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+
+{% include 'bbs/includs/footer.html' %}
+
+{#<script src="/static/layui/layui.js"></script>#}
+{#<script src="/static/js/main.js"></script>#}
+{#<script src="/static/js/bbs/index.js"></script>#}
+</body>
+</html>

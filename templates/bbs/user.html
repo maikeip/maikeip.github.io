@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>用户详情页</title>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/account.css">
+
+</head>
+<body>
+
+{% include 'bbs/includs/header.html' %}
+
+<!--中间内容部分-->
+<main class="container mt-2">
+    <!--新闻列表-->
+    <div class="row mt-2">
+        <div class="col-md-3">
+            <div class="profile-menu d-flex flex-column">
+                <div class="profile-picture">
+                    <img src='/static/images/worm.jpg' alt="用户图片">
+                </div>
+                <div class="profile-name">用户 18675867241</div>
+
+                <ul class="profile-detail">
+                    <li>性 别：男</li>
+                    <li>签 名：这个人很懒，什么都没留下</li>
+                </ul>
+
+                <div class="focus-profile">
+                    <a href="javascript:;" class="focused"
+                       data-userid="1"
+                       style="display: none"
+                    >
+                        <span class="out">已关注</span>
+                        <span class="over">取消关注</span>
+                    </a>
+
+                    <a href="javascript:;" class="focus"
+                       data-userid="1"
+                       style="display: inline-block"
+                    >关注</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="profile-card px-3">
+                <h3 class="text-center py-3">文章列表</h3>
+                <table class="table">
+                    <tbody>
+                    {% for i in range(10) %}
+                        <tr>
+                            <td><a href="/article">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a></td>
+                            <td>通过</td>
+                            <td><span class="text-muted">2018-1-17</span></td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+                <nav class="d-flex justify-content-center">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">&lt;</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% include 'bbs/includs/footer.html' %}
+
+<script src="/static/js/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>

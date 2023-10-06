@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>青灯全栈-注册</title>
+    <link rel="stylesheet" href="/static/layui/css/layui.css">
+    <link rel="stylesheet" href="/static/css/bbs/auth.css">
+</head>
+<body>
+
+<form class="layui-form" action="javascript:void(0);">
+    <div class="layui-form-item">
+        <img class="logo" src="/static/images/logo2.png"/>
+        <div class="title">青 灯 论 坛</div>
+        <div class="desc">
+            青 灯 教 育 全 栈 教 学 项 目 后 台 -- 注 册
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <input name="username" type="text" lay-verify="required" placeholder="账 户:" value="" hover class="layui-input"
+               autocomplete="off"/>
+    </div>
+    <div class="layui-form-item">
+        <input name="password" type="password" lay-verify="required" placeholder="密 码 :" value="" hover
+               class="layui-input"/>
+    </div>
+    <div class="layui-form-item">
+        <input placeholder="验证码 : " name="captcha_code" lay-verify="required"
+               hover class="code layui-input layui-input-inline"/>
+        <img src="/static/images/getCaptcha.png" class="codeImage" id="captchaImage"/>
+    </div>
+    <div class="layui-form-item">
+        <input name="mobile" type="text" lay-verify="required" placeholder="手机号:" value="" hover
+               class="code layui-input layui-input-inline"
+               autocomplete="off"/>
+        <!--点击发送短信-->
+        <div class="layui-form-mid layui-word-aux"><a href="javascript:;" class="send_sms">点击获取验证码</a>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <input name="invitation_code" type="text" lay-verify="required" placeholder="短信验证码:" value=""
+               hover class="layui-input" autocomplete="off"/>
+    </div>
+
+    <div class="layui-form-item">
+        <button class="layui-btn" lay-submit lay-filter="register">
+            注 册
+        </button>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-form-mid layui-word-aux">
+            已有账号？ <a href="/login" style="color: #59b7a7;">登录</a>
+        </div>
+    </div>
+</form>
+
+<script src="/static/layui/layui.js"></script>
+{#<script src="/static/js/main.js"></script>#}
+{#<script src="/static/js/bbs/register.js"></script>#}
+</body>
+</html>
