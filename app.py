@@ -3,6 +3,7 @@ import os
 from flask import Flask, current_app
 
 from configs import config
+from extensions import db
 from utils import setup_log
 
 app = Flask(__name__)
@@ -11,6 +12,7 @@ app = Flask(__name__)
 config_name = os.getenv("FLASK_CONFIG", "development")
 app.config.from_object(config[config_name])
 setup_log(config_name)
+db.init_app(app)
 
 
 @app.route("/")
