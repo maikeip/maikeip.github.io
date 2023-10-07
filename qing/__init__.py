@@ -5,6 +5,7 @@ from flask import Flask
 from configs import config
 from qing.com.utils import setup_log
 from qing.extensions import db, migrate
+from qing.models import UserORM
 from qing.views.index import index_bp
 
 

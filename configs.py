@@ -21,7 +21,7 @@ class BaseConfig:
 class DevelopmentConfig(BaseConfig):
     """开发配置"""
 
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:mysql@127.0.0.1:3306/qingdengbbs"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:root@127.0.0.1:3306/qing"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
